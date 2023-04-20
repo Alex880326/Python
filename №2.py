@@ -1,4 +1,6 @@
-a = int(input())
-b = int(input())
-c = int(input())
-print (a + b + c)
+i=int(input("Введите трехзначное цисло"))
+if i>99 and i<1000:
+    s=((i-i%100)/100)+((i%100-i%10)/10)+(i%10)
+    print(round(s))
+else:
+    print("Введено неверное число")     
